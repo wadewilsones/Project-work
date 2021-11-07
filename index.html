@@ -4,43 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&display=swap" rel="stylesheet">
     <title>Vicious Cycles</title>
 </head>
 <body>
 
     <header>
-        <img src="./images/logo3.png" alt = "Vicious Cycles logo">
-        <p>Login</p>
+        <div id = "header-wrap">
+            <img src="./images/logo3.png" alt = "Vicious Cycles logo" id = "logo">
 
-        <p>Social media</p>
-        <img src="./images/facebook.png" alt = "facebook link">
-        <img src = "./images/twitter.png" alt = "twitter link">
-        <nav></nav>
+                <div id = "login">
+                    <img src="./images/login.png" alt = "login link">
+                    <p>Login</p>  
+                </div>
+                <div id = "social-media">
+                    <img src="./images/facebook.png" alt = "facebook link">
+                    <img src = "./images/twitter.png" alt = "twitter link">
+                    <p>Social media</p>
+                </div>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>About</a></li>
+                <li><a>Events</a></li>
+                <li><a>Contacts</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <section>
+            <img src="./images/main-pic 1.png" alt = "explore new bikes">
             <h1>Explore New bikes</h1>
         </section>
-        <section>
-            <p>Mountain</p>
-            <p>electric</p>
-            <p>hybrid</p>
-            <p>accessories</p>
+        <section id ="b-types">
+            <img src="./images/mountain.png" alt = "mountain bicycle">
+            <img src="./images/electric.png" alt = "electric bicycle">
+            <img src="./images/hybrid.png" alt = "hybrid bicycle">
+            
         </section>
 
-        <section>Cusomize your cycle</section>
+        <section id = "access">
+            <img src="./images/accessories.png" alt = "accessories">
+        </section>
+
         <section>
+            <img src="./images/customization.png" alt = "Customize your bicycle">
+            </section>
+
+        <section id = "subscribtion">
             <h6>To receive infromation about out discounts...</h6>
-            <input type = "text" value="Type your email...">
-            <input type="submit" value="Subscribe">
+            <input type = "text" value="Type your email..." id = "sub-field">
+            <h6>......and press the button!</h6>
+            <input type="submit" value="Subscribe" id ="submit">
         </section>
     </main>
     <footer>
-        <h4>Contact Us</h4>
-        <p>info@ViciousCycles.com</p>
-        <p>(919) 123-4567</p>
-        <p>123 Main St.Pittsboro, NC 27000</p>
-        <p>Vicious Cycles © 2021 </p>
+        <div id = "footer-container">
+            <section>
+                <h4>Contact Us</h4>
+                <p>info@ViciousCycles.com</p>
+                <p>(919) 123-4567</p>
+                <p>123 Main St.Pittsboro, NC 27000</p>
+            </section>    
+                <p>Vicious Cycles © 2021 </p>
+        </div>
     </footer>
 
 
