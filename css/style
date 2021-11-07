@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: Roboto, sans-serif ;
+}
+
+@media screen and (min-width: 1440px){
+
+    /*Header*/
+    header{
+        margin: auto;
+        border-bottom: 5px solid #E74700;
+    }
+
+    #header-wrap{
+        display:flex;
+        align-items:center;
+        justify-content:end;
+        width:1440px;
+        margin: 0.5% auto 0;
+        
+    }
+
+    #logo{
+
+        width:400px;
+        margin: 0 16%;
+    }
+
+    #login{
+        margin: 0 5% 0;
+    }
+
+    #login p, 
+    #social-media p{
+        margin:0;
+    }
+
+    #social-media img{   
+        padding:0 4% ;
+    }
+
+
+/*Navigation*/
+
+nav{
+   
+    width:1440px;
+    margin: auto;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    text-align: center;
+    margin: 0 2%;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    text-decoration:underline 1px;
+}
+
+
+/*Main and sections*/
+main{
+    width: 1440px;
+    margin: auto;
+}
+
+#b-types{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5% 0;
+}
+
+#access {
+    
+    margin: 0 0 5% 0;
+}
+
+/*Subscription section*/
+
+#subscribtion{
+    width: 1440px;
+    margin: 5% auto;
+}
+
+#subscribtion h6{
+    text-align: center;
+    font-family: "Bebas Neue", "sans-serif";
+    font-size:1.5em;
+    color:#585858;
+    margin-bottom: 2%;
+}
+
+#sub-field{
+    border: #c7c7c7 2px solid;
+    border-radius: 5px;
+    width:273px;
+    height: 36px;
+    color:#868686;
+    padding-left: 1%;
+    margin: auto;
+    display: block;
+}
+
+#submit{
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+    height: 81px;
+    background-color:#1499D3;
+    color:white;
+    border:none;
+    font-size: 2em;
+    border-radius: 35px;
+    font-family: "Bebas Neue", "sans-serif";
+}
+
+#submit:hover{
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+    height: 81px;
+    background-color:#E74700;
+    cursor: pointer;
+    color:white;
+    border:none;
+    font-size: 2em;
+    border-radius: 35px;
+    font-family: "Bebas Neue", "sans-serif" ;
+}
+
+/*Subscription section*/
+
+footer{
+    background-color:#E74700;
+    margin:0;
+    padding-bottom: 1%;
+    color:white;
+    font-family: "Bebas Neue", "sans-serif" 
+}
+
+footer div{
+    width: 1440px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h4{
+    
+    font-size: 2em;
+    text-decoration:underline;
+    letter-spacing: 1.2px;
+    margin: 15% 0 0;
+}
+
+footer section p{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    line-height: 0.8;
+
+}
+
+footer p{
+    font-size: 1.8em;
+}
+
+}
