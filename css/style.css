@@ -70,6 +70,30 @@ main{
     margin: auto;
 }
 
+/*Text on images*/
+
+.container-for-text-image{
+    position: relative;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", "sans-serif";
+    font-size: 3.5em;
+
+}
+
+.center-right {
+    position: absolute;
+    top: 30%;
+    left:60%;
+    
+  }
+
+ #center-right-customize{
+    position: absolute;
+    top: 30%;
+    left:50%;
+ } 
+
 #b-types{
     display: flex;
     justify-content: space-between;
