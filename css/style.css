@@ -1,11 +1,21 @@
+/*
+Used colors: #E74700; #FFFFFF; #1499D3; #585858;
+Used fonts: Roboto; Bebas Neue
+
+*/
+
+
 body{
     margin:0;
     padding:0;
     border:0;
-    font-family: Roboto, sans-serif ;
+    font-family: Roboto, "Bebas Neue", sans-serif ;
 }
 
-@media screen and (min-width: 1440px){
+h1{
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+}
+@media screen and (min-width: 1440px) {
 
     /*Header*/
     header{
@@ -13,32 +23,16 @@ body{
         border-bottom: 5px solid #E74700;
     }
 
-    #header-wrap{
-        display:flex;
-        align-items:center;
-        justify-content:end;
-        width:1440px;
-        margin: 0.5% auto 0;
+.menu{
+    display: none;
+}
+
+    .logo{
+
+        width:20%;
+        display: block;
+        margin: 2% auto;
         
-    }
-
-    #logo{
-
-        width:400px;
-        margin: 0 16%;
-    }
-
-    #login{
-        margin: 0 5% 0;
-    }
-
-    #login p, 
-    #social-media p{
-        margin:0;
-    }
-
-    #social-media img{   
-        padding:0 4% ;
     }
 
 
@@ -63,6 +57,10 @@ nav ul li:hover{
     text-decoration:underline 1px;
 }
 
+nav a{
+    text-decoration:none;
+    color:black;
+}
 
 /*Main and sections*/
 main{
@@ -76,7 +74,7 @@ main{
     position: relative;
     text-align: right;
     color: rgb(255, 255, 255);
-    font-family: "Bebas Neue", "sans-serif";
+    font-family: "Bebas Neue", Roboto, "sans-serif";
     font-size: 3.5em;
 
 }
@@ -85,42 +83,69 @@ main{
     position: absolute;
     top: 30%;
     left:60%;
-    
   }
 
- #center-right-customize{
+  .center-right:hover
+  {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+ .center-right-customize{
     position: absolute;
     top: 30%;
     left:50%;
  } 
 
-#b-types{
+ .center-right-customize:hover{
+    transform: scale(1.1);
+    transition: 1s;
+ }
+
+ /*Next sections */
+ .introduction{
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 5% 0;
+ }
+
+ .introduction p{
+    width: 80%;
+    margin: 2% auto;
+ }
+.b-types{
     display: flex;
     justify-content: space-between;
     margin: 0 0 5% 0;
 }
 
-#access {
+.b-types img:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+
+.access {
     
     margin: 0 0 5% 0;
 }
 
 /*Subscription section*/
 
-#subscribtion{
+.subscribtion{
     width: 1440px;
     margin: 5% auto;
 }
 
-#subscribtion h6{
+.subscribtion h6{
     text-align: center;
-    font-family: "Bebas Neue", "sans-serif";
+    font-family: "Bebas Neue", Roboto, "sans-serif";
     font-size:1.5em;
     color:#585858;
     margin-bottom: 2%;
 }
 
-#sub-field{
+.sub-field{
     border: #c7c7c7 2px solid;
     border-radius: 5px;
     width:273px;
@@ -131,7 +156,7 @@ main{
     display: block;
 }
 
-#submit{
+.submit{
     margin: 0 auto;
     display: block;
     width: 270px;
@@ -141,10 +166,10 @@ main{
     border:none;
     font-size: 2em;
     border-radius: 35px;
-    font-family: "Bebas Neue", "sans-serif";
+    font-family: "Bebas Neue", Roboto, "sans-serif";
 }
 
-#submit:hover{
+.submit:hover{
     margin: 0 auto;
     display: block;
     width: 270px;
@@ -155,44 +180,648 @@ main{
     border:none;
     font-size: 2em;
     border-radius: 35px;
-    font-family: "Bebas Neue", "sans-serif" ;
+    font-family: "Bebas Neue", Roboto, "sans-serif" ;
 }
 
-/*Subscription section*/
+/*Footer*/
 
 footer{
     background-color:#E74700;
     margin:0;
+    width:100%;
     padding-bottom: 1%;
     color:white;
-    font-family: "Bebas Neue", "sans-serif" 
+    font-family: Roboto,"Bebas Neue", "sans-serif"; 
 }
 
-footer div{
-    width: 1440px;
+.footer-container{
+    max-width:1440px;
     margin:auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.copyright{
+    display: block;
+    font-family: "Bebas Neue", Roboto, "sans-serif" ;
+    font-size: 1.5em;
+}
+
+
+.social-media-footer{
+    display: inline-block;
+}
 footer h4{
     
     font-size: 2em;
     text-decoration:underline;
     letter-spacing: 1.2px;
     margin: 15% 0 0;
+    font-family: "Bebas Neue", Roboto, "sans-serif" ;
 }
 
-footer section p{
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    line-height: 0.8;
 
+footer section p{
+    font-size: 1em;
+    line-height: 1;
 }
 
 footer p{
     font-size: 1.8em;
 }
 
+.helpfull-links{
+    text-align: center;
+
 }
+footer ul li {
+    
+    list-style-type: none;
+    color:white;
+    text-align: left;
+
+}
+
+
+footer ul li a {
+    
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.5;
+
+}
+footer ul li a:hover {
+    
+    color:white;
+    text-decoration: underline;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+}
+/*End of desktop*/
+
+
+
+
+/*Phone*/
+
+@media screen and (min-width:240px) and (max-width: 480px) {
+
+/*Header*/
+header{
+    margin: auto;
+    border-bottom: 5px solid #E74700;
+    min-height: 50px;
+    padding-top: 5%;
+}
+
+.header-wrap{
+    width:90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+
+    width:50%;
+    
+}
+
+
+/*Navigation*/
+
+
+nav{
+   
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul{
+margin: 1% 0;
+padding: 5% 0;
+
+}
+
+
+nav li {
+    display: inline;
+    border: 2px solid greenl;
+    padding: 0 1%;
+
+}
+
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+.logo{
+
+    width: 50%;
+    display: block;
+    margin: 2% auto;
+    
+}
+
+/*Main and sections*/
+main{
+    width: 100%;
+}
+
+.container-for-text-image img{
+    display: none;
+}
+.main-section{
+    background-image: url("../images/main-pic1-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    min-height: 400px;
+    
+}
+
+.main-section h1 {
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    text-align: center;
+    font-size: 3em;
+    padding-top: 25%;
+
+}
+
+/*Next sections */
+.introduction{
+
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+    font-size: 1.3em;
+    width: 90%;
+    line-height: 1.5;
+    margin: 5% auto;
+ }
+
+ .introduction p{
+    width: 100%;
+    text-align: center;
+    margin: 2% auto;
+ }
+.b-types{
+
+    display:block;
+}
+
+.b-types img{
+
+    width: 100%;
+}
+
+
+.access img {
+    
+   display: none;
+}
+
+.access{
+    background-image: url("../images/accessories-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    min-height: 100px;
+}
+
+.access h2{
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    text-align: center;
+    font-size: 2em;
+}
+
+.customize-section{
+    background-image: url("../images/customization-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    min-height: 100px;
+}
+
+.customize-section h2{
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/*Subscription section*/
+
+.subscribtion{
+    width: 100%;
+    margin: 5% auto;
+    padding-top: 5%;
+}
+
+.subscribtion h6{
+    text-align: center;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    font-size:1em;
+    color:#585858;
+    margin: 1.6%;
+}
+
+
+.sub-field{
+    border: #c7c7c7 2px solid;
+    border-radius: 5px;
+    width:273px;
+    height: 36px;
+    color:#868686;
+    padding-left: 1%;
+    margin: auto;
+    display: block;
+}
+
+.submit{
+    margin: 0 auto 5%;
+    display: block;
+    width: 160px;
+    height: 51px;
+    background-color:#1499D3;
+    color:white;
+    border:none;
+    font-size: 1.5em;
+    border-radius: 35px;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+}
+
+.submit:hover{
+
+    background-color:#E74700;
+
+}
+
+
+ /*Footer*/ 
+ footer{
+    background-color:#E74700;
+    margin:0;
+    width:100%;
+    padding-bottom: 1%;
+    color:white;
+    font-family: Roboto,"Bebas Neue", "sans-serif"; 
+}
+
+footer h4{
+    
+    font-size: 1.5em;
+    text-decoration:underline;
+    text-align: left;
+    letter-spacing: 1.2px;
+    margin: 15% 0 0;
+    font-family: "Bebas Neue", Roboto, "sans-serif" ;
+}
+
+
+footer section p{
+    font-size: 0.9em;
+}
+
+.footer-container{
+    display: block;
+    line-height: 1!important;
+    width: 90%;
+    margin: auto;
+}
+.helpfull-links{
+    text-align: center;
+    margin-right: 10%;
+
+}
+.Links{
+    font-size: 3.2vw;
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+footer ul{
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+footer ul li {
+    
+    list-style-type: none;
+    color:white;
+    display: block;
+    text-align: left;
+}
+
+footer ul li a {
+    
+    color:white;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 1.2;
+
+}
+
+.copyright{
+  text-align: center;
+    font-size: 1em;
+}
+
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 1439px) {
+
+/*Header*/
+header{
+    margin: auto;
+    border-bottom: 5px solid #E74700;
+    min-height: 50px;
+    padding-top: 2%;
+}
+
+.header-wrap{
+    width:90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+
+    width: 50%;
+    display: block;
+    margin: 2% auto;
+    
+}
+
+/*Navigation*/
+
+/*Navigation*/
+
+
+nav{
+   
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul{
+margin: 1% 0;
+padding: 2% 0;
+
+}
+
+
+nav li {
+    display: inline;
+    border: 2px solid greenl;
+    padding: 0 1%;
+
+}
+
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+
+/*Main and sections*/
+main{
+    width: 100%;
+}
+
+.container-for-text-image img{
+    display: none;
+}
+.main-section{
+    background-image: url("../images/main-pic1-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main-section h1 {
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    font-size: 3em;
+}
+
+/*Next sections */
+.introduction{
+
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+    font-size: 1.3em;
+    width: 90%;
+    line-height: 1.5;
+    margin: 5% auto;
+ }
+
+ .introduction p{
+    width: 100%;
+    text-align: center;
+    margin: 2% auto;
+ }
+.b-types{
+
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: 10% 0;
+
+}
+
+.b-types img{
+
+    width: 150px;
+    margin: 2% 0;
+    border-radius: 100px;
+
+}
+
+
+.access img {
+    
+   display: none;
+}
+
+.access{
+    background-image: url("../images/accessories-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    margin-top: 1%;
+    min-height: 100px;
+}
+
+.access h2{
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    text-align: center;
+    font-size: 2em;
+}
+
+.customize-section{
+    background-image: url("../images/customization-phone.png") ;
+    background-size:cover;
+    padding-top: 1%;
+    margin-top: 1%;
+    min-height: 100px;
+}
+
+.customize-section h2{
+    color:white;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/*Subscription section*/
+
+.subscribtion{
+    width: 100%;
+    margin: 5% auto;
+    padding-top: 5%;
+}
+
+.subscribtion h6{
+    text-align: center;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    font-size:1em;
+    color:#585858;
+    margin: 1.6%;
+}
+
+
+.sub-field{
+    border: #c7c7c7 2px solid;
+    border-radius: 5px;
+    width:273px;
+    height: 36px;
+    color:#868686;
+    padding-left: 1%;
+    margin: auto;
+    display: block;
+}
+
+.submit{
+    margin: 0 auto 5%;
+    display: block;
+    width: 160px;
+    height: 51px;
+    background-color:#1499D3;
+    color:white;
+    border:none;
+    font-size: 1.5em;
+    border-radius: 35px;
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+}
+
+.submit:hover{
+
+    background-color:#E74700;
+
+}
+     /*Footer*/ 
+ footer{
+    background-color:#E74700;
+    margin:0;
+    width:100%;
+    padding-bottom: 1%;
+    color:white;
+    font-family: Roboto,"Bebas Neue", "sans-serif"; 
+}
+
+footer h4{
+    
+    font-size: 1.5em;
+    text-decoration:underline;
+    text-align: left;
+    letter-spacing: 1.2px;
+    margin: 15% 0 0;
+    font-family: "Bebas Neue", Roboto, "sans-serif" ;
+}
+
+
+footer section p{
+    font-size: 1.2em;
+}
+
+.footer-container{
+    display: block;
+    line-height: 1!important;
+    width: 90%;
+    margin: auto;
+}
+.helpfull-links{
+    text-align: center;
+    margin-right: 10%;
+
+}
+.Links{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+footer ul{
+    display: block;
+    text-align: left;
+    padding: 0;
+}
+footer ul li {
+    
+    list-style-type: none;
+    color:white;
+    display: block;
+    text-align: left;
+}
+
+footer ul li a {
+    
+    color:white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.2;
+
+}
+
+footer ul li a:hover {
+    
+    color:white;
+    text-decoration: underline;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.copyright{
+  text-align: center;
+    font-size: 1em;
+}
+   
+   }
