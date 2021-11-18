@@ -13,43 +13,46 @@
 <body>
 
     <header>
-        <div id = "header-wrap">
-            <img src="./images/logo3.png" alt = "Vicious Cycles logo" id = "logo">
-
-                <div id = "login">
-                    <img src="./images/login.png" alt = "login link">
-                    <p>Login</p>  
-                </div>
-                <div id = "social-media">
-                    <img src="./images/facebook.png" alt = "facebook link">
-                    <img src = "./images/twitter.png" alt = "twitter link">
-                    <p>Social media</p>
-                </div>
+        <div class = "header-wrap">
+            <img src="./images/logo3.png" alt = "Vicious Cycles logo" class = "logo">
+             <!--For tablets and phones
+            <img src="./images/menu.png" alt = "Vicious Cycles logo" class = "menu">
+            -->
+            
 
         </div>
 
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>About</a></li>
-                <li><a>Events</a></li>
-                <li><a>Contacts</a></li>
+                <li><a href = #>Home</a></li>
+                <li><a href = #>Shop</a></li>
+                <li><a href = #>About</a></li>
+                <li><a href = #>Events</a></li>
+                <li><a href = "form.html">Contacts</a></li>
             </ul>
+
         </nav>
+
+
+
     </header>
 
     <main>
-        <section>
+        
+        <section class = "main-section">
              <!--Create text on images-->
             <div class = "container-for-text-image">
-                <img src="./images/main-pic 1.png" alt = "explore new bikes">
+                <img src="./images/main-pic1.png" alt = "explore new bikes">
                 <div class = "center-right">
                     <h1>Explore New bikes</h1>
                 </div>
             </div>
         </section>
-        <section id ="b-types">
+        <section class = "introduction">
+            <p>The bicycle is a very popular, environmentally friendly, mobile transport. Every day he uses millions of us to travel long or short distances in completely different models and types.</p>
+           <p>The Vicious Cycles is an adventure territory for thrill-seekers and lovers of a healthy lifestyle! Here you can choose and buy a bike for any riding style and for any member of your family.</p>
+        </section>
+        <section class ="b-types">
            
             <img src="./images/mountain.png" alt = "mountain bicycle">
             <img src="./images/electric.png" alt = "electric bicycle">
@@ -57,7 +60,7 @@
             
         </section>
 
-        <section id = "access">
+        <section class = "access">
             <div class = "container-for-text-image">
                 <img src="./images/accessories.png" alt = "accessories">
                 <div class = "center-right">
@@ -65,32 +68,51 @@
                 </div>
             </div>
         </section>
-
-        <section>
+      
+        <section class = "customize-section">
             <div class = "container-for-text-image">
                 <img src="./images/customization.png" alt = "Customize your bicycle">
-                <div id = "center-right-customize">
+                <div class = "center-right-customize">
                     <h2>Customize your Cycle</h2>
                 </div>
             </div>
             </section>
-
-        <section id = "subscribtion">
-            <h6>To receive infromation about out discounts...</h6>
-            <input type = "text" value="Type your email..." id = "sub-field">
+            
+        <section class = "subscribtion">
+            <h6>To receive information about our discounts...</h6>
+            <input type = "text" value="Type your email..." class = "sub-field">
             <h6>......and press the button!</h6>
-            <input type="submit" value="Subscribe" id ="submit">
+            <input type="submit" value="Subscribe" class ="submit">
         </section>
     </main>
     <footer>
-        <div id = "footer-container">
-            <section>
+        <div class = "footer-container">
+
+            <div class = "Links">
+
+            <section class = "contactLinks">
                 <h4>Contact Us</h4>
                 <p>info@ViciousCycles.com</p>
                 <p>(919) 123-4567</p>
                 <p>123 Main St.Pittsboro, NC 27000</p>
-            </section>    
-                <p>Vicious Cycles © 2021 </p>
+            </section>
+
+            <section class = "contactLinks" id ="helpfull-links-section">
+                <h4 class = "helpfull-links">Helpful links</h4>
+                <ul>
+                    <li><a href ="https://www.bicycle-guider.com/bike-articles/bike-size-chart/">How to choose right bike</a></li></li>
+                    <li><a href = "https://www.thecyclingexperts.co.uk/get-cycling/buying-a-bike/choosing-the-right-bicycle/">How to choose right bike size</a></li>
+                </ul>
+            </div>
+
+            <section class = "copyright">
+                <p id = "copyright">Vicious Cycles © 2021 </p>
+                <div class = "social-media-footer">
+                    <a href="https://www.facebook.com/"><img src="./images/white-facebook.png" alt = "facebook link"></a>
+                    <a href="https://twitter.com/?lang=en"><img src = "./images/white-twitter.png" alt = "twitter link"></a>
+                </div>   
+            </section>
+
         </div>
     </footer>
 
