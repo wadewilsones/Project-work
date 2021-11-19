@@ -130,6 +130,105 @@ main{
     margin: 0 0 5% 0;
 }
 
+    
+/*ABOUT*/
+
+.about{
+    width: 1024px;
+    margin: auto;
+}
+
+.about p{
+    text-align: justify;
+    font-size: 1em;
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+}
+
+.about h1{
+   
+    text-align: center;
+    font-size: 3em;
+    padding-top:2%;
+}
+
+.about h2{
+    font-family: "Bebas Neue", Roboto, "sans-serif";
+    font-size: 2em;
+    text-align: center;
+}
+
+.about-biography{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+.about-biography div {
+    width: 48%;
+}
+
+.about-who-are-we{
+    
+    padding: 15% 0 15%;
+    margin: 4% 0;
+    background-image: url("../images/who-are-we.jpg") ;
+    color:white;
+}
+
+.about-who-are-we h2{
+    text-align: center;
+
+}
+
+.about-who-are-we p{
+    text-align: left;
+    width: 90%;
+    line-height: 1.6;
+    margin: auto;
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+    font-size: 1em;
+}
+
+
+.philosophy{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    margin: 4% 0;
+
+}
+
+.philosophy div{
+    width: 48%;
+}
+
+.why-we{
+    padding: 12% 0 10%;
+    margin: 4% 0;
+    background-image: url("../images/philocophy.jpg") ;
+    color:white;
+}
+
+.why-we p{
+    text-align: left;
+    width: 90%;
+    line-height: 1.6;
+    margin: auto;
+    font-family: Roboto, "Bebas Neue", sans-serif ;
+    font-size: 1em;
+}
+
+.about section {
+    margin: 10% 0 0 0;
+
+}
+
+.about img:hover{ 
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+    
 /*Subscription section*/
 
 .subscribtion{
