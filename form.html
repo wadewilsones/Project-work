@@ -5,116 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "css/style.css">
-    <link rel = "stylesheet" href = "css/form.css">
+    <link rel = "stylesheet" href = "css/phone.css">
+    <link rel = "stylesheet" href = "css/tablet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Vicious Cycles</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Contacts</title>
 </head>
 <body>
 
     <header>
         <div class = "header-wrap">
-            <img src="./images/logo3.png" alt = "Vicious Cycles logo" class = "logo">
-            <img src="./images/menu.png" alt = "Vicious Cycles logo" class = "menu">
-            <!--For tablets and phones-->
+           <img src="./images/logo3.png" alt = "Vicious Cycles logo" class = "logo">        
+           <div class= "search-container">
+              <i class="fas fa-search"></i>
+              <input type="search" id="search" placeholder="Search..">
 
-
+           </div>    
         </div>
-
+        
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = #>Shop</a></li>
-                <li><a href = #>About</a></li>
-                <li><a href = #>Events</a></li>
-                <li><a href = #>Contacts</a></li>
-            </ul>
+           <ul>
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "shop.html">Shop</a></li>
+              <li><a href = "about.html">About</a></li>
+              <li><a href = "events.html">Events</a></li>
+              <li><a href = "form.html">Contacts</a></li>
+           </ul>
+
         </nav>
     </header>
 
-    <main>
+    <main class = "form">
         <h1>Feel Free to reach us out</h1>
-        <h3>If you have any questions, please fill out the form!</h3>
-           
-            <form class = "form">
-
-              
-
-                <label for= "name">Your name: </label><br>
-                <input type="text" placeholder ="John Doe..." id = "name" class = "textbox"><br>
-
-                <label>Your email: </label><br>
-                <input type="email" placeholder ="Johndoe@gmail.com..." class = "textbox" id= "email"><br>
-
-                <label>Your phone number: </label><br>
-                <input type="tel" placeholder ="(919) 123-4321..." class = "textbox" id= "tel"><br>
-
-                <label>Have you visited the store before?</label><br>
-                <input type="radio" id = "yes" name ="Experiense" value = "yes">
-                <label for = "yes" class = "radio">Yes</label>
-                <input type="radio" id = "no" name ="Experiense" value = "no" >
-                <label for = "yes" class = "radio">No</label><br>
-
-
-                <label>What bicycle are you looking for?</label><br>
-                <div class = "container">
-                    <label for = "mountain">
-                    <input type="checkbox" id="mountain" name = "mountain" value = "Mountain" class = "check" checked="checked">Mountain
-                    </label>
-                    
-                    <label for = "Hybrid ">
-                    <input type="checkbox" id="hybrid " name = "Hybrid " value = "hybrid " class = "check">Hybrid 
-                </label>
-                  
-                <label for = "electric">
-                    <input type="checkbox" id="electric " name = "electric " value = "electric " class = "check"> Electric</label><br>
-                    
-                </div>
-                <label>What bike did you have before?</label>
-                <select>
-                    <option>Mountain</option>
-                    <option>Hybrid</option>
-                    <option>Electric</option>
-                    <option>Else</option>
-                </select><br>
-                <label>Your message: </label><br>
-                <textarea id="message" ></textarea>
-
-                <input type="submit" value="Submit" id="sub-btn">
-            </form>
+        <div class = "form-container">
+            <section>
+                <h6 class = "questions">If you have any questions, please fill out the form!</h6>
+                <form class = "form">
+                    <label for= "name">Your name: </label><br>
+                    <input type="text" placeholder ="John Doe..." id = "name" class = "textbox"><br>
+                    <label>Your email: </label><br>
+                    <input type="email" placeholder ="Johndoe@gmail.com..." class = "textbox" id= "email"><br>
+                    <label>Your phone number: </label><br>
+                    <input type="tel" placeholder ="(919) 123-4321..." class = "textbox" id= "tel"><br>
+                    <label>Have you visited the store before?</label><br>
+                    <input type="radio" id = "yes" name ="Experiense" value = "yes">
+                    <label for = "yes" class = "radio">Yes</label>
+                    <input type="radio" id = "no" name ="Experiense" value = "no" >
+                    <label for = "yes" class = "radio">No</label><br>
+                    <label>What bicycle are you looking for?</label><br>
+                    <div class = "container">
+                        <label for = "mountain">
+                        <input type="checkbox" id="mountain" name = "mountain" value = "Mountain" class = "check" checked="checked">Mountain
+                        </label>  
+                        <label for = "hybrid">
+                        <input type="checkbox" id="hybrid" name = "Hybrid" value = "hybrid" class = "check">Hybrid 
+                    </label> 
+                    <label for = "electric">
+                        <input type="checkbox" id="electric" name = "electric" value = "electric" class = "check"> Electric</label><br>    
+                    </div>
+                    <label>What bike did you have before?</label>
+                    <select>
+                        <option>Mountain</option>
+                        <option>Hybrid</option>
+                        <option>Electric</option>
+                        <option>Else</option>
+                    </select><br>
+                    <label>Your message: </label><br>
+                    <textarea id="message"></textarea>
+                    <input type="submit" value="Submit" id="sub-btn">
+                </form>
+            </section>
+            <section class = "map">
+                <section class = "contactLinks">
+                    <h4>Contact Us</h4>
+                    <p>info@ViciousCycles.com</p>
+                    <p>(919) 123-4567</p>
+                    <p>123 Main St.Pittsboro, NC 27000</p>
+                 </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25909.630539138983!2d-79.18590394904145!3d35.73350206801888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acb97f2695f989%3A0x7d512c2db0470c33!2z0J_QuNGC0YLRgdCx0L7RgNC-LCDQodC10LLQtdGA0L3QsNGPINCa0LDRgNC-0LvQuNC90LAgMjczMTI!5e0!3m2!1sru!2sus!4v1637295950497!5m2!1sru!2sus" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+    </div>
      </main>
-    <footer>
+     <footer>
         <div class = "footer-container">
+           <div class = "Links">
+              <section class = "contactLinks">
+                 <h4>Contact Us</h4>
+                 <p>info@ViciousCycles.com</p>
+                 <p>(919) 123-4567</p>
+                 <p>123 Main St.Pittsboro, NC 27000</p>
+              </section>
 
-            <div class = "Links">
-
-            <section class = "contactLinks">
-                <h4>Contact Us</h4>
-                <p>info@ViciousCycles.com</p>
-                <p>(919) 123-4567</p>
-                <p>123 Main St.Pittsboro, NC 27000</p>
-            </section>
-
-            <section class = "contactLinks" id ="helpfull-links-section">
-                <h4 class = "helpfull-links">Helpful links</h4>
-                <ul>
-                    <li><a href ="https://www.bicycle-guider.com/bike-articles/bike-size-chart/">How to choose right bike</a></li></li>
-                    <li><a href = "https://www.thecyclingexperts.co.uk/get-cycling/buying-a-bike/choosing-the-right-bicycle/">How to choose right bike size</a></li>
-                </ul>
-            </div>
-
-            <section class = "copyright">
-                <p id = "copyright">Vicious Cycles © 2021 </p>
-                <div class = "social-media-footer">
-                    <a href="https://www.facebook.com/"><img src="./images/white-facebook.png" alt = "facebook link"></a>
-                    <a href="https://twitter.com/?lang=en"><img src = "./images/white-twitter.png" alt = "twitter link"></a>
-                </div>   
-            </section>
-
+              <section class = "contactLinks" id ="helpfull-links-section">
+                 <h4 class = "helpfull-links">Helpful links</h4>
+                 <ul>
+                    <li><a href ="https://www.bicycle-guider.com/bike-articles/bike-size-chart/"  target="_blank">How to choose right bike</a></li>
+                    <li><a href = "https://www.thecyclingexperts.co.uk/get-cycling/buying-a-bike/choosing-the-right-bicycle/"  target="_blank">How to choose right bike size</a></li>
+                 </ul>
+              </section>
+           </div>
+           <section class = "copyright">
+              <p id = "copyright">Vicious Cycles © 2021 </p>
+              <div class = "social-media-footer">
+                 <a href="https://www.facebook.com/" target="_blank"><img src="./images/white-facebook.png" alt = "facebook link"></a>
+                 <a href="https://twitter.com/?lang=en" target="_blank"><img src = "./images/white-twitter.png" alt = "twitter link"></a>
+              </div>
+           </section>
         </div>
-    </footer>
-
-
-</body>
-</html>
+     </footer>
+     </body>
+  </html>
